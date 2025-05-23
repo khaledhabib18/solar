@@ -60,11 +60,11 @@ modern-web-app/
 
 ## Screenshots
 
-> _Add screenshots of your dashboard, tracking, filter, reference, and comparison pages here._
+>_ 
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the KH License.
 
 ---
 
