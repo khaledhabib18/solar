@@ -1,0 +1,359 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #F3F3E0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #033e59;
+  color: #fefefe;
+  padding: 1.2rem 0 1.2rem 0; /* Reduced vertical padding */
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(24,59,78,0.10);
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: block;
+}
+
+.sub-page-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: block;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-left: 0;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  height: 38px;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+header h1 {
+  font-size: 2rem; /* Slightly smaller font */
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(24,59,78,0.10);
+}
+
+.subtitle {
+  font-size: 1rem; /* Slightly smaller font */
+  color: #DDA853;
+  margin-top: 0.3rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.header-accent {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background: #DDA853;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards in a single row */
+  gap: 1.2rem;
+  padding: 2rem 1rem;
+  justify-items: center;
+}
+
+.card {
+  background: #F3F3E0;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(24,59,78,0.10);
+  overflow: hidden;
+  width: 240px; /* Ensure cards fit in a single row on laptop */
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  border: 2px solid #DDA853;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(24,59,78,0.15);
+  border-color: #27548A;
+}
+
+.card img {
+  width: 100%;
+  height: 170px; /* Increased height */
+  object-fit: cover;
+  background: #f0f0f0;
+  flex-shrink: 0;
+}
+
+.card-title {
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  color: #183B4E;
+  width: 100%;
+  text-align: center;
+  background: #F3F3E0;
+  border-top: 2px solid #DDA853;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+/* Back icon styling */
+.back-icon {
+  position: absolute;
+  left: 1.2rem;
+  top: 0.2rem;
+  font-size: 2rem;
+  color: #DDA853;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  z-index: 2;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-icon:hover {
+  color: #fff;
+  background: #DDA853;
+  box-shadow: 0 2px 8px rgba(221,168,83,0.18);
+  transform: scale(1.12);
+}
+
+/* Data fields styling */
+.data-fields {
+  max-width: 400px;
+  margin: 1rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(24,59,78,0.08);
+  padding: 2rem 1.5rem;
+}
+
+.data-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.15rem;
+  color: #183B4E;
+  border-bottom: 1px solid #F3F3E0;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  gap: 1rem;
+}
+
+.field-label {
+  font-weight: 600;
+  color: #27548A;
+  flex: 1;
+  text-align: left;
+}
+
+.field-value,
+.field-unit {
+  text-align: right;
+}
+
+.field-value {
+  font-weight: 500;
+  color: #DDA853;
+  min-width: 60px;
+  display: inline-block;
+}
+
+.field-unit {
+  margin-left: 0.5rem;
+  color: #888;
+  font-size: 1rem;
+  min-width: 30px;
+  display: inline-block;
+}
+
+/* Pump control styling */
+.pump-control {
+  max-width: 400px;
+  margin: 2rem auto 2rem auto; /* Added bottom margin */
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(24,59,78,0.08);
+  padding: 1.5rem 1.5rem 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.pump-label {
+  font-weight: 600;
+  color: #27548A;
+  margin-bottom: 0.5rem;
+  text-align: center;    /* Center the label */
+  /* Remove colon in HTML for best result */
+}
+
+.pump-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#pump-slider {
+  flex: 1;
+  accent-color: #DDA853;
+  height: 4px;
+}
+
+#pump-value {
+  min-width: 40px;
+  color: #DDA853;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Comparison table styling */
+.comparison-table-section {
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(24,59,78,0.08);
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 0.9rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #F3F3E0;
+}
+
+.comparison-table th {
+  background: #27548A;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table td.disabled {
+  color: #bbb;
+  background: #f7f7f7;
+  font-style: italic;
+}
+
+.comparison-table tr:hover td:not(.disabled) {
+  background: #f3f3e0;
+  transition: background 0.2s;
+}
+
+/* Date and Time section styling */
+.date-time-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+  color: #27548A;
+  margin: 1rem 0 0.5rem 0;
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 1100px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 0.5rem;
+  }
+  .card {
+    width: 90vw;
+    max-width: 350px;
+  }
+  .data-fields {
+    max-width: 85vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .pump-control {
+    max-width: 85vw;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .comparison-table-section {
+    max-width: 85vw;
+    padding: 0.5rem;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.95rem;
+  }
+}

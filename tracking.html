@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tracking | Solar Station</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="back-icon" title="Back to Home">&#60;</a>
+      <img src="images/logo.png" alt="SunVision Logo" class="sub-page-logo" />
+      <div class="page-title">
+        <span>Tracking</span> <!-- Change as needed for each subpage -->
+      </div>
+      <div class="header-accent"></div>
+    </div>
+  </header>
+  <!-- Add this section after the header in all your pages -->
+  <section class="date-time-section">
+    <span id="current-date"></span>
+    <span id="current-time"></span>
+  </section>
+  <main>
+    <section class="data-fields">
+      <div class="data-field">
+        <span class="field-label">Panel Temperature:</span>
+        <span class="field-value" id="panel-temperature">--</span>
+        <span class="field-unit">°C</span>
+      </div>
+      <div class="data-field">
+        <span class="field-label">Output Voltage:</span>
+        <span class="field-value" id="output-voltage">--</span>
+        <span class="field-unit">V</span>
+      </div>
+      <div class="data-field">
+        <span class="field-label">Output Current:</span>
+        <span class="field-value" id="output-current">--</span>
+        <span class="field-unit">A</span>
+      </div>
+      <div class="data-field">
+        <span class="field-label">Output Power:</span>
+        <span class="field-value" id="output-power">--</span>
+        <span class="field-unit">W</span>
+      </div>
+      <div class="data-field">
+        <span class="field-label">Consumed Energy:</span>
+        <span class="field-value" id="consumed-energy">--</span>
+        <span class="field-unit">Wh</span>
+      </div>
+      <div class="data-field">
+        <span class="field-label">Filter Inlet Temperature:</span>
+        <span class="field-value" id="filter-inlet-temperature">--</span>
+        <span class="field-unit">°C</span>
+      </div>
+      <div class="data-field">
+        <span class="field-label">Filter Outlet Temperature:</span>
+        <span class="field-value" id="filter-outlet-temperature">--</span>
+        <span class="field-unit">°C</span>
+      </div>
+      <div class="data-field">
+        <span class="field-label">Tank Inlet Temperature:</span>
+        <span class="field-value" id="tank-inlet-temperature">--</span>
+        <span class="field-unit">°C</span>
+      </div>
+      <div class="data-field">
+        <span class="field-label">Tank Outlet Temperature:</span>
+        <span class="field-value" id="tank-outlet-temperature">--</span>
+        <span class="field-unit">°C</span>
+      </div>
+    </section>
+    <section class="pump-control">
+      <label for="pump-slider" class="pump-label">Pump Control</label>
+      <div class="pump-slider-row">
+        <input type="range" id="pump-slider" min="0" max="100" value="0" step="1" />
+        <span id="pump-value">0%</span>
+      </div>
+    </section>
+  </main>
+  <script src="scripts/tracking.js"></script>
+</body>
+
+</html>

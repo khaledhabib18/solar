@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparison | Solar Station</title>
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="back-icon" title="Back to Home">&#60;</a>
+            <img src="images/logo.png" alt="SunVision Logo" class="sub-page-logo" />
+            <div class="page-title">
+                <span>Comparison</span> <!-- Change as needed for each subpage -->
+            </div>
+            <div class="header-accent"></div>
+        </div>
+    </header>
+    <!-- Add this section after the header in all your pages -->
+    <section class="date-time-section">
+        <span id="current-date"></span>
+        <span id="current-time"></span>
+    </section>
+    <main>
+        <section class="comparison-table-section">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Tracking</th>
+                        <th>Filter</th>
+                        <th>Reference</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Panel Temperature (°C)</td>
+                        <td id="tracking-panel-temperature">--</td>
+                        <td id="filter-panel-temperature">--</td>
+                        <td id="reference-panel-temperature">--</td>
+                    </tr>
+                    <tr>
+                        <td>Output Voltage (V)</td>
+                        <td id="tracking-output-voltage">--</td>
+                        <td id="filter-output-voltage">--</td>
+                        <td id="reference-output-voltage">--</td>
+                    </tr>
+                    <tr>
+                        <td>Output Current (A)</td>
+                        <td id="tracking-output-current">--</td>
+                        <td id="filter-output-current">--</td>
+                        <td id="reference-output-current">--</td>
+                    </tr>
+                    <tr>
+                        <td>Output Power (W)</td>
+                        <td id="tracking-output-power">--</td>
+                        <td id="filter-output-power">--</td>
+                        <td id="reference-output-power">--</td>
+                    </tr>
+                    <tr>
+                        <td>Consumed Energy (Wh)</td>
+                        <td id="tracking-consumed-energy">--</td>
+                        <td id="filter-consumed-energy">--</td>
+                        <td id="reference-consumed-energy">--</td>
+                    </tr>
+                    <tr>
+                        <td>Inlet Temperature (°C)</td>
+                        <td id="tracking-inlet-temperature">--</td>
+                        <td id="filter-inlet-temperature">--</td>
+                        <td class="disabled">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Outlet Temperature (°C)</td>
+                        <td id="tracking-outlet-temperature">--</td>
+                        <td id="filter-outlet-temperature">--</td>
+                        <td class="disabled">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Pump Control (%)</td>
+                        <td id="tracking-pump">--</td>
+                        <td id="filter-pump">--</td>
+                        <td class="disabled">N/A</td>
+                    </tr>
+                    <!-- Add these rows to your comparison table in comparison.html -->
+                    <tr>
+                        <td>Tank Inlet Temperature (°C)</td>
+                        <td id="tracking-tank-inlet-temperature">--</td>
+                        <td class="disabled">N/A</td>
+                        <td class="disabled">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Tank Outlet Temperature (°C)</td>
+                        <td id="tracking-tank-outlet-temperature">--</td>
+                        <td class="disabled">N/A</td>
+                        <td class="disabled">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Back Inlet Temperature (°C)</td>
+                        <td class="disabled">N/A</td>
+                        <td id="filter-back-inlet-temperature">--</td>
+                        <td class="disabled">N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Back Outlet Temperature (°C)</td>
+                        <td class="disabled">N/A</td>
+                        <td id="filter-back-outlet-temperature">--</td>
+                        <td class="disabled">N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="scripts/comparison.js"></script>
+</body>
+
+</html>
